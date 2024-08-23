@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="header">YAY! It's BOGO</div>
+        <div class="card">
+          <div class="offer-container mt-5">
+            <div class="badge">30% Off</div>
+            <div class="details1">
+              <span class="radio-button"></span>
+              <div class="offer-title">Buy 1 Get 2</div>
+              <div class="offer-price">$18.00 USD</div>
+            </div>
+          </div>
+          <span class="align offersof "> Color </span>
+          <span class="align"> Size </span>
+          <div class="detailsof">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="detailsof">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="card">
+          <div class="offer-container mt-5">
+            <div class="badge">30% Off</div>
+            <div class="details1">
+              <span class="radio-button"></span>
+              <div class="most-popular">Most Popular</div>
+              <div class="offer-title">Buy 2 Get 4</div>
+              <div class="offer-price">$24.00 USD</div>
+            </div>
+          </div>
+          <span class="align offersof "> Color </span>
+          <span class="align"> Size </span>
+          <div class="detailsof">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="detailsof">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+        <div class="card" id="last-card">
+          <div class="offer-container mt-5">
+            <div class="details1">
+              <span class="radio-button"></span>
+              <div class="offer-title">Buy 3 Get 6 <span class="pink-box">10% Off</span>
+              </div>
+              <div class="offer-price">$36.00 USD <span class="old-price">$10.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <span class="align offers "> Color </span>
+          <span class="align"> Size </span>
+          <div class="details">
+            <label for="number">#1</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+          <div class="details">
+            <label for="number">#2</label>
+            <select id="size" class="select-container">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="color" class="select-container">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="">
+          <label for="number"></label>
+          <span class="alignc"> Free delivery </span>
+          <span class="aligns"> Total :$18.00 USD </span>
+        </div>
+        <button class="add-to-cart"> + Add to Cart</button>
+        <div class="footer">Powered by <span class="colo">Pumper</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function() {
+        var lastCard = document.getElementById('last-card');
+        lastCard.classList.add('expanded');
+        setTimeout(function() {
+          lastCard.classList.remove('expanded');
+        }, 1000); // Adjust the delay (in milliseconds) as needed
+      };
+    </script>
+  </body>
+</html>
